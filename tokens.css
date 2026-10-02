@@ -1,0 +1,85 @@
+/* ==========================================================================
+   DESIGN SETTINGS
+   Change colours, fonts, sizes and spacing here. Every part of the site
+   reads from these values, so one change updates the whole site.
+
+   Fonts come from Google Fonts. If you change a font name here, also change
+   the Google Fonts link near the top of index.html.
+   ========================================================================== */
+
+:root {
+  /* ---- Brand colours ---- */
+  --blush:    #E8C8CC;
+  --olive:    #77785D;
+  --cream:    #F8F4F0;
+  --espresso: #302820;
+
+  /* Supporting shades (derived from the brand colours) */
+  --blush-deep:  #D9AEB4;   /* hover / stronger blush */
+  --olive-deep:  #5E5F48;   /* olive text on light backgrounds */
+  --cream-dark:  #EFE8E1;   /* soft panels on cream */
+  --ink-soft:    #6B5E52;   /* secondary text on light backgrounds */
+  --cream-soft:  #CFC4B8;   /* secondary text on espresso */
+
+  /* ---- Backgrounds ---- */
+  --bg-page:    var(--cream);
+  --bg-dark:    var(--espresso);
+  --bg-accent:  var(--blush);
+  --text:       var(--espresso);
+  --text-on-dark: var(--cream);
+
+  /* ---- Fonts ---- */
+  --font-display: "Big Shoulders Display", "Arial Narrow", "Helvetica Neue Condensed", Impact, sans-serif;
+  --font-accent:  "Instrument Serif", Georgia, "Times New Roman", serif;
+  --font-body:    "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+
+  --weight-display: 900;
+  --weight-body: 400;
+  --weight-strong: 600;
+
+  /* ---- Font sizes (they scale smoothly between phone and desktop) ---- */
+  --size-hero:    clamp(3.4rem, 13vw, 11.5rem);
+  --size-h1:      clamp(3rem, 9vw, 7.5rem);
+  --size-h2:      clamp(2.2rem, 5.5vw, 4.25rem);
+  --size-h3:      clamp(1.6rem, 3vw, 2.4rem);
+  --size-lead:    clamp(1.15rem, 1.6vw, 1.4rem);
+  --size-body:    1.0625rem;
+  --size-small:   0.875rem;
+  --size-label:   0.75rem;
+
+  --line-tight: 0.88;
+  --line-body:  1.6;
+
+  /* ---- Spacing ---- */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: clamp(4.5rem, 10vw, 8rem);   /* between sections */
+  --gutter:  clamp(1rem, 4vw, 3rem);      /* left and right page edge */
+
+  /* ---- Layout widths ---- */
+  --width-page: 1400px;
+  --width-text: 38rem;
+
+  /* ---- Borders and corners ---- */
+  --radius: 0px;          /* the site uses sharp, editorial corners */
+  --radius-button: 999px; /* buttons are fully rounded */
+  --border-width: 1.5px;
+  --border: var(--border-width) solid var(--espresso);
+  --rule: 1px solid rgba(48, 40, 32, 0.18);
+  --rule-on-dark: 1px solid rgba(248, 244, 240, 0.2);
+
+  /* ---- Buttons ---- */
+  --button-bg: var(--espresso);
+  --button-text: var(--cream);
+  --button-bg-hover: var(--olive);
+  --button-padding: 0.8em 1.4em;
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --speed: 0.6s;
+
+  color-scheme: light;
+}

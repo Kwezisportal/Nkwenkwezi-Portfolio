@@ -1,0 +1,2 @@
+Put your CV PDF in this folder, named Kwezi-CV.pdf
+(or change cv.file in content/site.js to match your file name).
